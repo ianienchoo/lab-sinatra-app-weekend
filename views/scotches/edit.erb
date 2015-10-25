@@ -1,0 +1,19 @@
+<h2>Edit Scotch</h2>
+
+<form action="/scotches/<%= @scotch.id %>/update" method ="POST" class="form scotch" id="add-scotch">
+
+  <div class="form-group">
+    <label for="scotch_brand">Brand:</label>
+    <input class="form-control" type="text" name="scotch[brand]" id="scotch_brand" value="<%= @scotch.brand %>">
+  </div>
+
+  <div class="form-group">
+    <label for="scotch_year">Year:</label>
+    <input type="text" name="scotch[year]" id="scotch_year" class="form-control" value="<%= @scotch.year %>">
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Edit Scotch</button>
+</form>
+
+<form action=""></form>
